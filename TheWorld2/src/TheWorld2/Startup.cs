@@ -15,9 +15,10 @@ namespace TheWorld2
         }
 
         // This method gets called by the runtime. Use this method to testconfigure the HTTP request pipeline.
-        public void Configure(Microsoft.AspNet.Builder.IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder app)
         {
             app.UseStaticFiles();
+            app.UseDefaultFiles();
         }
     }
 }
